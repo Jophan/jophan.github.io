@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #59c2ff;
+    position: relative;
 }
 
 .navbar {
@@ -10,18 +11,28 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    
+}
+hr.nav_divider{
+    padding: 0;
+    margin: 0;
 }
 
 nav ul {
-    text-align: center;
+    text-align: left;
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+nav ul li.nav_link, li.home_link {
     display: inline;
     margin-right: 20px;
     font-size: larger;
+}
+
+nav ul li.home_link {
+    margin-left: 20px;
+    text-align: left;
 }
 
 nav ul li a {
@@ -29,6 +40,10 @@ nav ul li a {
     text-shadow: #333 0px 0px 5px;
     color: white;
     font-weight: bold;
+}
+
+nav ul li a:active{
+    text-decoration: underline;
 }
 
 nav ul li a:hover {
