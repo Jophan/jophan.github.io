@@ -13,6 +13,7 @@ body {
 }
 
 nav ul {
+    text-align: center;
     list-style-type: none;
     padding: 0;
 }
@@ -20,25 +21,22 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    font-size: larger;
 }
 
 nav ul li a {
     text-decoration: none;
+    text-shadow: #333 0px 0px 5px;
     color: white;
     font-weight: bold;
 }
 
-h1 {
-    font-size: 2em;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-h1.page-title {
-    text-align: center;
+div.page-title {
     margin-top: 20px;
     margin-left: 20px;
     color: #333;
-}
-
-nav ul li:first-child {
-    margin-left: 20px;
 }
